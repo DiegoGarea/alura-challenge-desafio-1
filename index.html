@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo 6. ONE Oracle - Alura Latam 2024</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-container">
+          <a href="https://diegogg-dev.com/" target="_blank">
+            <img src="/blueplanet.png" alt="blueplanet-logo" />
+            <p class="header-name">Diego G. | Web Developer</p>
+          </a>
+        </div>
+        <div>
+          <p>Oracle ONE - Alura | Encriptador Challenge</p>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section-one">
+        <textarea
+          name="text"
+          id="texto"
+          placeholder="Escriba aqui..."
+          oninput="handleInput()"
+        ></textarea>
+        <div class="buttons">
+          <button id="btn-encrypt" onclick="encriptar()" class="btn-one">
+            Encriptar
+          </button>
+          <button id="btn-decrypt" onclick="desencriptar()" class="btn-two">
+            Desencriptar
+          </button>
+        </div>
+        <div class="alert-container">
+          <img src="/alerta.png" alt="alerta" class="alerta-img" />
+          <p class="paragraph-rules">Solo letra minuscula y sin acentos</p>
+        </div>
+      </section>
+      <section class="section-two">
+        <textarea
+          id="resultado"
+          class="encrypted-text"
+          placeholder="Encriptado..."
+          readonly
+        ></textarea>
+        <button id="btn-copy" onclick="copiarEncriptado()" class="btn-copy">
+          Copiar
+        </button>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div>
+          <p>Diego Gonzalez - 2024</p>
+        </div>
+        <div>
+          <a
+            href="https://diegogg-dev.com/"
+            target="_blank"
+            class="link-portfolio"
+            >www.diegogg-dev.com</a
+          >
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/diegogarea/" target="_blank">
+            <img
+              src="/linkedin.png"
+              alt="Linkedin"
+              class="social-networks-img"
+            />
+          </a>
+          <a href="https://github.com/DiegoGarea" target="_blank">
+            <img src="/github.png" alt="Github" class="social-networks-img" />
+          </a>
+          <a href="https://app.aluracursos.com/user/diegogarea" target="_blank">
+            <img src="/alura.png" alt="Alura" class="social-networks-img" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
